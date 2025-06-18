@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="nav-brand">
+                    <img
+                        src="public/logo.png"
+                        alt="Paws & Pixels Logo"
+                        class="brand-logo"
+                    />
+                    <span>Paws & Pixels</span>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li>
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="nav-link"
+                                >Testimonials</a
+                            >
+                        </li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Memorable Branding for Pet Businesses
+                        </h1>
+                        <p class="hero-subtitle">
+                            Everything your pet brand needs to stand out, all in
+                            one place
+                        </p>
+                        <button
+                            class="cta-button"
+                            onclick="scrollToSection('portfolio')"
+                        >
+                            <span class="button-text">Browse My Work</span>
+                            <span class="paw-wiggle">🐾</span>
+                        </button>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="mockup-slideshow">
+                            <div class="mockup-slide active">
+                                <img
+                                    src="public/logo2.jpg"
+                                    alt="Logo Design Sample"
+                                />
+                                <div class="mockup-label">Logo Design</div>
+                            </div>
+                            <div class="mockup-slide">
+                                <img
+                                    src="public/flyer.png"
+                                    alt="Flyer Design Sample"
+                                />
+                                <div class="mockup-label">Flyer Design</div>
+                            </div>
+                            <div class="mockup-slide">
+                                <img
+                                    src="public/Website.png"
+                                    alt="Website Design Sample"
+                                />
+                                <div class="mockup-label">Website Design</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-paws">
+                    <img
+                        src="assets/paw-print.svg"
+                        alt=""
+                        class="floating-paw paw-1"
+                    />
+                    <img
+                        src="assets/paw-print.svg"
+                        alt=""
+                        class="floating-paw paw-2"
+                    />
+                    <img
+                        src="assets/paw-print.svg"
+                        alt=""
+                        class="floating-paw paw-3"
+                    />
+                    <img
+                        src="assets/paw-print.svg"
+                        alt=""
+                        class="floating-paw paw-4"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Paws & Pixels</h2>
+                        <p>
+                            At Paws & Pixels, we believe every pet business
+                            deserves to stand out with beautiful, professional
+                            design. We're here to help small pet businesses,
+                            from dog groomers and pet boutiques to dog walkers,
+                            build memorable brands that connect with customers
+                            and leave a lasting impression.
+                        </p>
+                        <p>
+                            We specialise in affordable, stylish digital design
+                            that shows off the personality of your pet business,
+                            helping you attract more customers and grow with
+                            confidence.
+                        </p>
+                    </div>
+                    <div class="about-visual">
+                        <img
+                            src="public/logo.png"
+                            alt="Paws & Pixels Logo"
+                            class="about-logo"
+                        />
+                        <img src="assets/bone.svg" alt="" class="bone-accent" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-carousel-container">
+                    <div class="portfolio-carousel">
+                        <div class="portfolio-slide active">
+                            <img
+                                src="public/aquatica-logo.jpg"
+                                alt="Aquatica Pet Shop Logo"
+                            />
+                            <div class="portfolio-caption">
+                                <h3>Aquatica Pet Shop</h3>
+                                <p>2024 • Logo Design</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-slide">
+                            <img
+                                src="public/bark-sparkle-logo.jpg"
+                                alt="Bark and Sparkle Salon Logo"
+                            />
+                            <div class="portfolio-caption">
+                                <h3>Bark and Sparkle Salon</h3>
+                                <p>2024 • Logo Design</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-slide">
+                            <img
+                                src="public/eb-dog-groomers-logo.jpg"
+                                alt="EB Dog Groomers Logo"
+                            />
+                            <div class="portfolio-caption">
+                                <h3>EB Dog Groomers</h3>
+                                <p>2024 • Logo Design</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-slide">
+                            <img
+                                src="public/collar-comb-logo.jpg"
+                                alt="Collar and Comb Dog Grooming Logo"
+                            />
+                            <div class="portfolio-caption">
+                                <h3>Collar and Comb</h3>
+                                <p>2024 • Dog Grooming Logo</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-slide">
+                            <img
+                                src="public/holiday-dogs-logo.jpg"
+                                alt="A Holiday for Dogs Too Logo"
+                            />
+                            <div class="portfolio-caption">
+                                <h3>A Holiday for Dogs Too</h3>
+                                <p>2024 • Logo Design</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-slide">
+                            <img
+                                src="public/barking-lounge-logo.jpg"
+                                alt="The Barking Lounge Logo"
+                            />
+                            <div class="portfolio-caption">
+                                <h3>The Barking Lounge</h3>
+                                <p>2024 • Logo Design</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-slide">
+                            <img
+                                src="public/dog-house-logo.jpg"
+                                alt="The Dog House Spa & Boutique Logo"
+                            />
+                            <div class="portfolio-caption">
+                                <h3>The Dog House Spa</h3>
+                                <p>2024 • Logo Design</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-slide">
+                            <img
+                                src="public/ripon-pets-logo.jpg"
+                                alt="Ripon Pet Supplies Logo"
+                            />
+                            <div class="portfolio-caption">
+                                <h3>Ripon Pet Supplies</h3>
+                                <p>2024 • Logo Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button
+                            class="carousel-btn prev-btn"
+                            onclick="changeSlide(-1)"
+                        >
+                            ‹
+                        </button>
+                        <button
+                            class="carousel-btn next-btn"
+                            onclick="changeSlide(1)"
+                        >
+                            ›
+                        </button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span
+                            class="indicator active"
+                            onclick="currentSlide(1)"
+                        ></span>
+                        <span
+                            class="indicator"
+                            onclick="currentSlide(2)"
+                        ></span>
+                        <span
+                            class="indicator"
+                            onclick="currentSlide(3)"
+                        ></span>
+                        <span
+                            class="indicator"
+                            onclick="currentSlide(4)"
+                        ></span>
+                        <span
+                            class="indicator"
+                            onclick="currentSlide(5)"
+                        ></span>
+                        <span
+                            class="indicator"
+                            onclick="currentSlide(6)"
+                        ></span>
+                        <span
+                            class="indicator"
+                            onclick="currentSlide(7)"
+                        ></span>
+                        <span
+                            class="indicator"
+                            onclick="currentSlide(8)"
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services & Pricing Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-title">Services & Pricing</h2>
+                <div class="services-grid">
+                    <div class="service-card animate-card" data-delay="0">
+                        <div class="service-icon">🎨</div>
+                        <h3>Custom Logo</h3>
+                        <div class="price">£15</div>
+                        <ul>
+                            <li>Professional logo design</li>
+                            <li>3 design concepts</li>
+                            <li>Unlimited revisions</li>
+                            <li>High-resolution files</li>
+                        </ul>
+                    </div>
+                    <div class="service-card animate-card" data-delay="150">
+                        <div class="service-icon">📄</div>
+                        <h3>Flyer Design</h3>
+                        <div class="price">£35</div>
+                        <ul>
+                            <li>Eye-catching flyer design</li>
+                            <li>Print-ready format</li>
+                            <li>Social media version</li>
+                            <li>Fast turnaround</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="service-card featured animate-card"
+                        data-delay="300"
+                    >
+                        <div class="service-icon">📦</div>
+                        <h3>Starter Pack</h3>
+                        <div class="price">£65</div>
+                        <ul>
+                            <li>Custom Logo</li>
+                            <li>Flyer Design</li>
+                            <li>Instagram Highlight Covers</li>
+                            <li>Brand color palette</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="promo-block">
+                    <div class="floating-paws-bg">
+                        <img
+                            src="assets/paw-print.svg"
+                            alt=""
+                            class="floating-paw-bg paw-bg-1"
+                        />
+                        <img
+                            src="assets/paw-print.svg"
+                            alt=""
+                            class="floating-paw-bg paw-bg-2"
+                        />
+                        <img
+                            src="assets/paw-print.svg"
+                            alt=""
+                            class="floating-paw-bg paw-bg-3"
+                        />
+                        <img
+                            src="assets/paw-print.svg"
+                            alt=""
+                            class="floating-paw-bg paw-bg-4"
+                        />
+                    </div>
+                    <div class="floating-bubbles">
+                        <div class="bubble bubble-1"></div>
+                        <div class="bubble bubble-2"></div>
+                        <div class="bubble bubble-3"></div>
+                        <div class="bubble bubble-4"></div>
+                        <div class="bubble bubble-5"></div>
+                        <div class="bubble bubble-6"></div>
+                    </div>
+                    <div class="promo-content">
+                        <div class="promo-illustration">
+                            <img
+                                src="public/dog-laptop-website.png"
+                                alt="Dog with laptop"
+                                class="dog-laptop-image"
+                            />
+                        </div>
+                        <div class="promo-text">
+                            <h3>
+                                Website Design –
+                                <span class="price-highlight">£99</span>
+                                <span class="limited-badge">Limited Time!</span>
+                            </h3>
+                            <ul class="promo-features">
+                                <li>Mobile-friendly</li>
+                                <li>Easy to update</li>
+                                <li>SEO-ready</li>
+                            </ul>
+                            <button
+                                class="promo-cta-new"
+                                onclick="scrollToSection('contact')"
+                            >
+                                Get Started 🐾
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div
+                        class="testimonial-card animate-testimonial"
+                        data-delay="0"
+                    >
+                        <div class="floating-hearts">
+                            <div class="heart heart-1">💖</div>
+                            <div class="heart heart-2">✨</div>
+                        </div>
+                        <div class="quote">
+                            "Oh I love them both 🥰 and the white dog looks just
+                            like mine which is so so cute!"
+                        </div>
+                        <div class="author">
+                            - Sarah, Wags to Riches Dog Grooming
+                        </div>
+                    </div>
+                    <div
+                        class="testimonial-card animate-testimonial"
+                        data-delay="150"
+                    >
+                        <div class="floating-hearts">
+                            <div class="heart heart-1">🐾</div>
+                            <div class="heart heart-2">💫</div>
+                        </div>
+                        <div class="quote">
+                            "they are the cutest!! i love the second one but
+                            they're all so amazing! thank you so much 🤗"
+                        </div>
+                        <div class="author">- Dani, Dani's Dogs</div>
+                    </div>
+                    <div
+                        class="testimonial-card animate-testimonial"
+                        data-delay="300"
+                    >
+                        <div class="floating-hearts">
+                            <div class="heart heart-1">❤️</div>
+                            <div class="heart heart-2">⭐</div>
+                        </div>
+                        <div class="quote">
+                            "They're brilliant. I think the 1st one is my
+                            favourite! Thank you! X"
+                        </div>
+                        <div class="author">- Gemma, Gemma's Groom Room</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Create Something Beautiful</h2>
+                <div class="contact-content">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Tell me about your pet business and design needs..."
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contact-alternative">
+                        <div class="alt-contact">
+                            <h3>Prefer Instagram?</h3>
+                            <p>
+                                Send me a direct message for quick quotes and
+                                questions!
+                            </p>
+                            <a
+                                href="https://www.instagram.com/pawsandpixelsco/"
+                                class="instagram-button"
+                                target="_blank"
+                                >Message on Instagram</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <span>Paws & Pixels</span>
+                        <p>Memorable branding for pet businesses</p>
+                    </div>
+                    <div class="footer-designed-by">
+                        <img
+                            src="public/designed-by-paws-pixels.png"
+                            alt="Designed By Paws & Pixels"
+                            class="designed-by-logo"
+                        />
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Paws & Pixels. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
